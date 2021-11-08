@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:buoi5/screen2.dart';
+import 'package:buoi5/dimens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -80,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
         height: double.infinity,
         margin: const EdgeInsets.all(50),
         padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.all(Radius.circular(10)),border: Border.symmetric(vertical: BorderSide.none)),
+        decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.all(Radius.circular(10.r)),border: Border.symmetric(vertical: BorderSide.none)),
         child: Column(
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
@@ -100,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Text(
               'Lesson 4 : count=$_counter',
-              style: TextStyle(fontSize: 40),
+              style: TextStyle(fontSize: 40.t),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -108,11 +109,11 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 Icon(
                   Icons.home,
-                  size: 50,
+                  size: 50.w,
                   color: Colors.green,
                 ),
                 Image.asset(
-                  'asset/images/demo1.png',width: 50,height: 50,),
+                  'asset/images/demo1.png',width: 50.w,height: 50.w,),
             ]
             ),
                 Padding(
@@ -125,25 +126,25 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(
                   color: Colors.pinkAccent,
-                  width: 300,
-                  height: 300,
+                  width: 300.w,
+                  height: 300.w,
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 50,
-                        right: 50,
+                        left: 50.w,
+                        right: 50.w,
                         child: Text(
                           'Lesson 4',
-                          style: TextStyle(fontSize: 40),
+                          style: TextStyle(fontSize: 40.t),
                         ),
                       ),
                       Positioned(
-                        top: 100,
-                        left: 100,
+                        top: 100.w,
+                        left: 100.w,
                         child: Text(
                           'Lesson 5',
                           style: TextStyle(
-                            fontSize: 40,
+                            fontSize: 40.t,
                             fontWeight: FontWeight.w900),
                           ),
                         ),

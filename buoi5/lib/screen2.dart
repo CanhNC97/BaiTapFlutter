@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:buoi5/dimens.dart';
 
 class Page2 extends StatelessWidget{
   Page2({Key? key}) : super(key: key);
@@ -57,7 +58,7 @@ class Page2 extends StatelessWidget{
     itemBuilder: (BuildContext context, index){
       return Text(
         Listdemo[index],
-        style: TextStyle(fontSize: 30),
+        style: TextStyle(fontSize: 30.t),
       );
     }
   );
@@ -67,10 +68,10 @@ class Page2 extends StatelessWidget{
       itemBuilder: (BuildContext context,index){
         return Column(
           children: [
-            Image.asset('asset/images/demo2.png',width: 30 ,height: 30,),
+            Image.asset('asset/images/demo2.png',width: 20.w ,height: 20.w,),
             Text(
               Listdemo[index],
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 20.t),
             )
           ],
         );
